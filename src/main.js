@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import xiaoenai from './components/xiaoenai'
 import dynamic from './components/dynamic'
 import sweetWords from './components/sweetWords'
 import found from './components/found'
@@ -12,7 +11,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   mode:'history',
   routes:[
-    {path:'/xiaoenai',component:xiaoenai},
+    {path:'/',component:App},
     {path:'/dynamic',component:dynamic},
     {path:'/sweetWords',component:sweetWords},
     {path:'/found',component:found},
@@ -21,5 +20,6 @@ const router = new VueRouter({
 })
 new Vue({
   el: '#app',
+  router,
   render: h => h(App)
 })
