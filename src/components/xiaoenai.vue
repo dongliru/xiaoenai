@@ -1,6 +1,41 @@
 <template>
-  <div>
-    <router-view></router-view>
+  <div id="app" class= "container">
+    <div class = 'title'>
+    我们已相爱<br>
+    <b>1230</b>天
+    </div>
+    <div class = 'content clearfix'>
+      <div class='loveHead'>
+        <div class="loveHead-left">
+          <img src='../assets/头像1.jpg'>
+          <p>你瑞</p>
+        </div>
+        <div class="loveHead-right">
+          <img src='../assets/头像2.jpg'>
+          <p>不美不萌不温柔</p>
+        </div>
+      </div>
+      <div class='application'>
+        <ul class='clearfix'>
+          <li><router-link to="/album"><b>309</b><br>相册</router-link></li>
+          <li><router-link to="/diary"><b>99</b><br>日记本</router-link></li>
+          <li><router-link to="/anniversary"><b>5</b><br>纪念日</router-link></li>
+          <li><router-link to="/startSleep"><b><img src='../assets/1.png'></b><br>启动睡眠</router-link></li>
+          <li><router-link to="/aunts"><b><img src='../assets/2.png'></b><br>小姨妈</router-link></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class= 'footer'>
+      <ul class="clearfix">
+        <li><router-link to="/"><img src="../assets/xiaoenai.png" alt=""><br>小恩爱</router-link></li>
+        <li><router-link to="/dynamic"><img src="../assets/dynamic.png" alt=""><br>动态</router-link></li>
+        <li><router-link to="/sweetWords"><img src="../assets/sweetWord.jpg" alt=""><br>蜜语</router-link></li>
+        <li><router-link to="/found"><img src="../assets/found.jpg" alt=""><br>发现</router-link></li>
+        <li><router-link to="/me"><img src="../assets/me.jpg" alt=""><br>我</router-link></li>
+         <router-view></router-view>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -42,7 +77,7 @@ $imgWidth:560px;
       margin:0 auto;
       width:$imgWidth;
       height:500px;
-      background-image:url("./assets/psb (5).jpg");
+      background-image:url("../assets/psb (5).jpg");
       background-size:$width 500px; //连写有问题
       .loveHead-left {
         position:absolute;
