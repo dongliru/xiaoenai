@@ -50,11 +50,11 @@ export default {
 </script>
 
 <style lang="scss">
-$width:600px;
-$imgWidth:560px;
+$width:100%;
+$height:30%;
+$imgWidth: calc(100% - 40px);
 #app.container {
   position:relative;
-  // padding-top:10px;
   height:100%;
   width:$width;
   margin:0 auto;
@@ -62,49 +62,50 @@ $imgWidth:560px;
 .title {
   color:white;
   margin-left:30px;
+//   height:10%;
   b {
     font-size:20px;
   }
   }
   .content {
-      // margin-top:10px;   想给合影加个margin-top，但是就不能全屏显示了
+    margin-bottom:20px;
+    padding-bottom:5px;
+    height:80%;
     .loveHead {
-    
-      text-align:center;
-      position:relative;
-      border-bottom:1px solid #ccc;
-      border-radius:5px 5px 0 0;
-      margin:0 auto;
-      width:$imgWidth;
-      height:500px;
-      background-image:url("../assets/psb (5).jpg");
-      background-size:$width 500px; //连写有问题
-      .loveHead-left {
-        position:absolute;
-        bottom:10px;
-        left:40px;
-        img {
-          width:100px;
-          height:100px;
-        } 
+    text-align:center;
+    position:relative;
+    border-bottom:1px solid #ccc;
+    border-radius:5px 5px 0 0;
+    margin:0 auto;
+    width:$imgWidth;
+    background:url("../assets/psb (5).jpg") no-repeat cover $imgWidth $height;
+    // background-size:$width $height; //连写有问题
+    .loveHead-left {
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    img {
+        width:70px;
+        height:70px;
+    } 
       }
-      .loveHead-right {
-        position:absolute;
-        bottom:10px;
-        right:40px;
-        img {
-          width:100px;
-          height:100px;
-        }
-      }
+    .loveHead-right {
+    position:absolute;
+    bottom:10px;
+    right:20px;
+    img {
+        width:70px;
+        height:70px;
+    }
+    }
     }
     .application {
-      // margin-top:10px;
-       background:#F4e1Ad;
-       width:$imgWidth;
-       margin:0 auto;
-       border-radius:0 0 5px 5px;
-      // margin-top:10px;
+        padding-bottom:10px;
+        height:calc(100% - $height);
+        background:#F4e1Ad;
+        width:$imgWidth;
+        margin:0 auto;
+        border-radius:0 0 5px 5px;
       ul {
         li {
           float:left;
@@ -127,9 +128,11 @@ $imgWidth:560px;
     }
   }
   .footer {
+    height:2%;
     position:absolute;
     width:$width;
     bottom:0;
+    z-index:1;
     margin-top:10px;
     background:white;
     ul {
