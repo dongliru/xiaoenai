@@ -39,7 +39,9 @@
   </div>
 </template>
 <script>
-export default {
+
+export default
+ {
   name: 'app',
   data () {
     return {
@@ -51,7 +53,7 @@ export default {
 
 <style lang="scss">
 $width:100%;
-$height:30%;
+$height:400px;
 $imgWidth: calc(100% - 40px);
 #app.container {
   position:relative;
@@ -78,8 +80,9 @@ $imgWidth: calc(100% - 40px);
     border-radius:5px 5px 0 0;
     margin:0 auto;
     width:$imgWidth;
-    background:url("../assets/psb (5).jpg") no-repeat cover $imgWidth $height;
-    // background-size:$width $height; //连写有问题
+    height:$height;
+    background-image:url("../assets/psb (5).jpg") ;
+    background-size:$imgWidth $height;
     .loveHead-left {
     position:absolute;
     bottom:10px;

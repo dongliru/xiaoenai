@@ -13,6 +13,12 @@ li {
 a {
     text-decoration:none;
 }
+  .fl {
+    float:left;
+  }
+  .fr {
+    float:right;
+  }
 .clearfix:before,.clearfix:after {
   content:"";
   height:0;
