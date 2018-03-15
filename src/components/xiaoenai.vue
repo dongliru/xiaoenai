@@ -26,16 +26,7 @@
       </div>
     </div>
 
-    <div class= 'footer'>
-      <ul class="clearfix">
-        <li><router-link to="/"><img src="../assets/xiaoenai.png" alt=""><br>小恩爱</router-link></li>
-        <li><router-link to="/dynamic"><img src="../assets/dynamic.png" alt=""><br>动态</router-link></li>
-        <li><router-link to="/sweetWords"><img src="../assets/sweetWord.jpg" alt=""><br>蜜语</router-link></li>
-        <li><router-link to="/found"><img src="../assets/found.jpg" alt=""><br>发现</router-link></li>
-        <li><router-link to="/me"><img src="../assets/me.jpg" alt=""><br>我</router-link></li>
-         <router-view></router-view>
-      </ul>
-    </div>
+   
   </div>
 </template>
 <script>

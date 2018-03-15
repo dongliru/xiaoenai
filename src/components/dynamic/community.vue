@@ -1,7 +1,7 @@
 <template>
     <div id="community">
         <div class='header'>
-            <ul class="clearfix">
+            <ul>
                 <li class="hot" v-on:click="toggle(1)" :class="{active:mark==1}"><router-link to="/dynamic/community">热门</router-link></li>
                 <li class="fresh" v-on:click="toggle(2)" :class="{active:mark==2}"><router-link to='/dynamic/community/fresh'>新鲜</router-link></li>
                 <li class="attention" v-on:click="toggle(3)" :class="{active:mark==3}"><router-link to='/dynamic/community/attention'>关注</router-link></li>
@@ -34,15 +34,20 @@ export default  {
         .header {
             background:white;
             height:20px;
-            margin-left:50%;
             padding-top:0px;
-            li {
-                transform:translateX(-150%);
+            // text-align:center;
+            ul {
+                display:black;
+                margin:0 auto;
+                li {
+                // transform:translateX(-150%);
                 padding:5px 10px;
                 a {
                     color:black;
                 }
             }
+            }
+            
             .active {
                 border-bottom:1px solid red;
                 a {
