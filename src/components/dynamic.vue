@@ -3,8 +3,8 @@
        <div class='header'>
             <div class="button">
                   <ul class="clearfix">
-                    <li class="twoPerson" v-on:click="tabToggle(1)" :class="{active:index==1}"><router-link to="/twoPerson">二人</router-link></li>
-                    <li class="community" v-on:click="tabToggle(2)" :class="{active:index==2}"><router-link to="/community">社区</router-link></li>
+                    <li class="twoPerson" v-on:click="tabToggle(1)" :class="{active:index==1}"><router-link to="/dynamic/twoPerson">二人</router-link></li>
+                    <li class="community" v-on:click="tabToggle(2)" :class="{active:index==2}"><router-link to="/dynamic/community">社区</router-link></li>
                   </ul>
             </div>
            <div class="add ">
@@ -12,6 +12,7 @@
            </div>
        </div>
        <router-view></router-view>
+        
     </div>
     
 </template>

@@ -1,6 +1,9 @@
 <template>
   <div>
-    <router-view></router-view>
+    <div>
+      <router-view></router-view>
+    </div>
+
   </div>
 </template>
 <script>
@@ -15,86 +18,13 @@ export default {
 </script>
 
 <style lang="scss">
-$width:600px;
-$imgWidth:560px;
-#app.container {
-  position:relative;
-  // padding-top:10px;
-  height:100%;
-  width:$width;
-  margin:0 auto;
-  background:-webkit-linear-gradient(left,hotpink,lightblue,skyblue);
-.title {
-  color:white;
-  margin-left:30px;
-  b {
-    font-size:20px;
-  }
-  }
-  .content {
-      // margin-top:10px;   想给合影加个margin-top，但是就不能全屏显示了
-    .loveHead {
-    
-      text-align:center;
-      position:relative;
-      border-bottom:1px solid #ccc;
-      border-radius:5px 5px 0 0;
-      margin:0 auto;
-      width:$imgWidth;
-      height:500px;
-      background-image:url("./assets/psb (5).jpg");
-      background-size:$width 500px; //连写有问题
-      .loveHead-left {
-        position:absolute;
-        bottom:10px;
-        left:40px;
-        img {
-          width:100px;
-          height:100px;
-        } 
-      }
-      .loveHead-right {
-        position:absolute;
-        bottom:10px;
-        right:40px;
-        img {
-          width:100px;
-          height:100px;
-        }
-      }
-    }
-    .application {
-      // margin-top:10px;
-       background:#F4e1Ad;
-       width:$imgWidth;
-       margin:0 auto;
-       border-radius:0 0 5px 5px;
-      // margin-top:10px;
-      ul {
-        li {
-          float:left;
-          list-style:none;
-          width:20%;
-          text-align:center;
-          a {
-            color:#5E55ac;
-            text-decoration:none;
-            b {
-              display:block;
-              margin:0 auto;
-              line-height:40px;
-              width:40px;
-              height:40px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .footer {
+$width:100%;
+.footer {
+    height:2%;
     position:absolute;
     width:$width;
     bottom:0;
+    z-index:1;
     margin-top:10px;
     background:white;
     ul {
@@ -108,5 +38,4 @@ $imgWidth:560px;
       }
     }
   }
-}
 </style>

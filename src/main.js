@@ -26,20 +26,24 @@ const router = new VueRouter({
     {path:'/dynamic',component:dynamic,
      children: [
         {
-          path: '/twoPerson',    // 这里的路径怎么设置，怎么路由不是/dynamic/twoPerson   而是/twoPerson
+          path: '',    // 这里的路径怎么设置，怎么路由不是/dynamic/twoPerson   而是/twoPerson
+          component: twoPerson
+        },
+        {
+          path: 'twoPerson',    // 这里的路径怎么设置，怎么路由不是/dynamic/twoPerson   而是/twoPerson
           component: twoPerson
         },{
-          path:'/community',
+          path:'community',
           component:community,
             children:[
               {
-                path:'/hot',
+                path:'',
                 component:hot
               },{
-                path:'/fresh',
+                path:'fresh',
                 component:fresh
               },{
-                path:"/attention",
+                path:"attention",
                 component:attention
               }
             ]

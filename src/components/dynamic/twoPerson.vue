@@ -39,6 +39,7 @@
 <script></script>
 <style lang="scss">
     #twoPerson {
+        margin-bottom:10px;
         .message {
             margin:0 20px;
             .headshow {

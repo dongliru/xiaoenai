@@ -2,9 +2,9 @@
     <div id="community">
         <div class='header'>
             <ul class="clearfix">
-                <li class="hot" v-on:click="toggle(1)" :class="{active:mark==1}"><router-link to="/hot">热门</router-link></li>
-                <li class="fresh" v-on:click="toggle(2)" :class="{active:mark==2}"><router-link to='/fresh'>新鲜</router-link></li>
-                <li class="attention" v-on:click="toggle(3)" :class="{active:mark==3}"><router-link to='/attention'>关注</router-link></li>
+                <li class="hot" v-on:click="toggle(1)" :class="{active:mark==1}"><router-link to="/dynamic/community">热门</router-link></li>
+                <li class="fresh" v-on:click="toggle(2)" :class="{active:mark==2}"><router-link to='/dynamic/community/fresh'>新鲜</router-link></li>
+                <li class="attention" v-on:click="toggle(3)" :class="{active:mark==3}"><router-link to='/dynamic/community/attention'>关注</router-link></li>
             </ul>
         </div>
         <router-view></router-view>

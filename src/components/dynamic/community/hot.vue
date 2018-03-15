@@ -38,7 +38,9 @@
 </template>
 <script></script>
 <style lang="scss">
-      .stick  {
+    .hot {
+        // margin-bottom:10px;
+          .stick  {
             // color:white;
                 margin-top:2px;
                 font-size:14px;
@@ -56,6 +58,7 @@
         }
         .content {
             margin-left:10px;
+            // margin-bottom:10px;
             .title {
                 font-size:16px;
                 margin:3px 0;
@@ -69,4 +72,6 @@
                 }
             }
         }
+    }
+    
 </style>

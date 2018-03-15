@@ -18,7 +18,6 @@
                 <img src="../../../assets/story.gif" alt="">
                 <div>您关注的人还没有发帖哦~</div>
             </div>
-                
             </div>
     </div>
 </template>
@@ -26,8 +25,10 @@
     
 </script>
 <style lang="scss">
+// hot，fresh，attention 的样式都差不多，这里怎么共用 css，相同的html布局能不能共用 ？？？
 $height:calc(100% - 202px);
     .attention {
+        margin-bottom:10px;
         .content {
             position:relative;
             margin-bottom:10px;
@@ -42,11 +43,10 @@ $height:calc(100% - 202px);
                 top:10px;
             }
             .head {
-              
-                     img {
+                img {
                 width:60px;
                 height:60px;  
-                border-radius: 30px; //将给img标签加border-radius没有效果  ？？？
+                border-radius: 30px;
                 }
                 
                    

@@ -1,5 +1,5 @@
 <template>
-    <div class="hot">
+    <div class="fresh">
         <div class="content">
             <div class="message">
                 <div class="title">家规</div>
@@ -34,7 +34,8 @@
 </template>
 <script></script>
 <style lang="scss">
-      .stick  {
+    .fresh {
+        .stick  {
             // color:white;
                 margin-top:2px;
                 font-size:14px;
@@ -52,6 +53,7 @@
         }
         .content {
             margin-left:10px;
+            // margin-bottom:10px;
             .title {
                 font-size:16px;
                 margin:3px 0;
@@ -65,4 +67,6 @@
                 }
             }
         }
+    }
+      
 </style>

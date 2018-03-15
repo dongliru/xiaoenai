@@ -17,11 +17,11 @@
       </div>
       <div class='application'>
         <ul class='clearfix'>
-          <li><router-link to="/album"><b>309</b><br>相册</router-link></li>
-          <li><router-link to="/diary"><b>99</b><br>日记本</router-link></li>
-          <li><router-link to="/anniversary"><b>5</b><br>纪念日</router-link></li>
-          <li><router-link to="/startSleep"><b><img src='../assets/1.png'></b><br>启动睡眠</router-link></li>
-          <li><router-link to="/aunts"><b><img src='../assets/2.png'></b><br>小姨妈</router-link></li>
+          <li><router-link to="xiaoenai/album"><b>309</b><br>相册</router-link></li>
+          <li><router-link to="xiaoenai/diary"><b>99</b><br>日记本</router-link></li>
+          <li><router-link to="xiaoenai/anniversary"><b>5</b><br>纪念日</router-link></li>
+          <li><router-link to="xiaoenai/startSleep"><b><img src='../assets/1.png'></b><br>启动睡眠</router-link></li>
+          <li><router-link to="xiaoenai/aunts"><b><img src='../assets/2.png'></b><br>小姨妈</router-link></li>
         </ul>
       </div>
     </div>
